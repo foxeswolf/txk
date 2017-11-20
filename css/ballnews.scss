@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        @extend html;
+        height: 52px;
+        line-height: 52px;
+        background: #0dc441;
+        display: flex;
+        .top{
+            width: 20%;
+            .icon-santiao{
+                display: block;
+                color: #86E1A0;
+                font-size: 26px;
+                margin-left:15px;
+            }
+        }
+        .heading{
+            width: 60%;
+            line-height: 52px;
+            position: relative;
+            .hot{
+                width: 70px;
+                height: 29px;
+                line-height: 29px;
+                text-align: center;
+                background:#0AD985 ;
+                color: #fff;
+                border-radius: 8px 0 0 8px;
+                position: absolute;
+                top: 11.5px;
+                left: 42.5px;
+                }
+            .focus{
+                width: 70px;
+                height: 29px;
+                line-height: 29px;
+                text-align: center;
+                background:#0BCE63;
+                color: #86E1A0;
+                border-radius: 0 8px 8px 0;
+                position: absolute;
+                top: 11.5px;
+                right: 42.5px;
+            }    
+        
+        }
+        .twoCodes{
+             width:20%;
+            .icon-erweima01{
+                display: block;
+                font-size: 28px;
+                color:#86E1A0;
+                text-align: right;
+                margin-right: 15px;
+            }
+        }
+    }
+    nav{
+        @extend html;
+        height: 40px;
+        line-height: 40px;
+        ul{
+            display: flex;
+            li{
+                flex: 1;
+                text-align: center;
+                border-bottom: 1px solid #CED6CF;
+                &:nth-child(1){
+                    border-bottom: 3px solid #0DC441;
+                    a{ 
+                        color: #8DC441;
+                    }   
+                }
+                a{
+                    display: inline-block;
+                    color: #000;
+                }
+            }
+        }
+    }
+    section{
+        height: 100%;
+        flex: 1;
+        overflow: auto;
+        ul{
+            li{
+                width: 50%;
+                float: left;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+                &:nth-child(1){
+                    padding:10px 5px 0 10px;
+                    box-sizing: border-box;
+                }
+                &:nth-child(2){
+                    padding:10px 10px 0 5px;
+                    box-sizing: border-box;
+                }
+                &:nth-child(3),&:nth-child(5),&:nth-child(7){
+                    padding:0 5px 0 10px;
+                    box-sizing: border-box;
+                }
+                &:nth-child(4),&:nth-child(6),&:nth-child(8){
+                     padding:0 10px 0 5px;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+    footer{
+        @extend header;
+        border-top: 1px solid #CED6CF;
+        background:#fff;
+        ul{
+            width: 100%;
+            display: flex;
+            li{
+                flex:1;
+                text-align: center;
+                position: relative;
+                &:nth-child(3){
+                    .iconfont{
+                        width: 50px;
+                        height: 50px;
+                        font-size: 44px;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 5px;
+                        left:7px;
+                        border-radius: 50%;
+                        border: 1px solid #CED6CF;
+                        transform: translate(0,-10%);
+                    }                   
+                }
+                &:nth-child(1){
+                    a{
+                        color: #0DC441;
+                    }
+                    .iconfont{
+                        color: #0DC441;
+                    }
+                }
+                a{
+                   display: block;
+                   color: #D6D6D6;
+                   font-size:14px;
+                   position: absolute;
+                   left:34%;
+                   top:26%;
+                }
+                .iconfont{
+                    display: inline-block;
+                    font-size: 26px;
+                    color: #D6D6D6;
+                    position: absolute;
+                    left:35%;
+                    top:-19%;
+                }
+            }
+        }
+    }
+}
